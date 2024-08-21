@@ -1,0 +1,195 @@
+/* Navbar Background */
+.navbar {
+  background: linear-gradient(
+    135deg,
+    #FF5373, /* Start with the first color */
+    #FFC858, /* Transition to the second color */
+    #17E7FF, /* Continue to the third color */
+    #371598 /* End with the fourth color */
+  );
+  background-size: 400% 400%; /* Expand gradient for smooth animation */
+  animation: gradientAnimation 10s ease infinite; /* Animate gradient for dynamic effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Light shadow for depth */
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+/* Optional: Ensure text is readable over the background */
+.navbar .navbar-brand img {
+  filter: brightness(0) invert(1); /* Adjust logo color if needed for contrast */
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+  color: #ffffff; /* White for contrast against vibrant background */
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FFC858; /* Use a color from the palette for hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Button Primary */
+.navbar-nav .btn-primary {
+  color: #ffffff; /* White */
+  font-weight: 500;
+  padding: 5px 15px;
+  background-color: #371598; /* Deep Purple from the palette */
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.navbar-nav .btn-primary:hover {
+  background-color: #17E7FF; /* Lighter Blue from the palette */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background with transparency */
+  border: none; /* Remove default border */
+}
+
+/* Dropdown Hover Effect */
+.dropdown-menu.show {
+  display: block;
+}
+
+.header-links > ul > li.menu-item-has-children.dropdown.has-mega-dropdown > ul.dropdown-menu {
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  z-index: 9999;
+  right: 0;
+  display: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Darker shadow for better visibility */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+}
+
+.header-links > ul > li.menu-item-has-children.dropdown.has-mega-dropdown:hover > ul.dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Dropdown Item Styles */
+.dropdown-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #17E7FF; /* Blue from the palette */
+}
+
+.dropdown-item {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #f0f0f0; /* Light Gray */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.dropdown-item:active, .dropdown-item:hover {
+  color: #ffffff; /* White */
+  background-color: #FF5373; /* Pink from the palette */
+}
+
+/* Flex and Width */
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.list-unstyled li {
+  width: 100%;
+  white-space: nowrap;
+}
+
+/* Custom Dropdown Styles */
+.servicesDdl {
+  width: 850px;
+  min-width: max-content;
+  margin-left: -400px;
+  background-color: rgba(0, 0, 0, 0.8); /* Darker Background */
+}
+
+.countriesDDL {
+  width: 400px;
+  text-align: justify;
+  padding: 5px 10px;
+  margin-left: -45px;
+  background-color: rgba(0, 0, 0, 0.8); /* Darker Background */
+}
+
+.countriesDDL .row {
+  width: 400px;
+}
+
+/* Vertical Rule */
+.vr {
+  width: 1px;
+  margin-right: 10px;
+  background-color: #444; /* Darker Gray */
+}
+
+/* Link Styles */
+ul.dropdown-menu li a, ul.list-unstyled li a {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #f0f0f0; /* Light Gray */
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+  text-decoration: none;
+}
+
+.contact-btn a {
+  background-color: #FF5373; /* Pink from the palette */
+  color: #ffffff; /* White */
+  margin: 2px !important;
+  border-radius: 10px;
+  justify-content: center;
+  padding: 8px 25px;
+  border: 0 !important;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.contact-btn a:hover {
+  color: #ffffff !important;
+  background-color: #FFC858 !important; /* Yellow from the palette */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
+/* Navbar Brand */
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Center align items vertically */
+  justify-content: flex-start; /* Align items to the left */
+  padding: 0; /* Remove default padding */
+}
+
+/* Logo Image */
+.header-logo {
+  max-width: 120px; /* Set a maximum width for the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Optional: Adjust the padding or margin of the navbar if needed */
+.navbar {
+  padding-left: 15px; /* Adjust this value if you need more or less space */
+}

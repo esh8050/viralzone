@@ -1,0 +1,95 @@
+<section>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-black shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../../assets/header/vzLogo.png" alt="Grynow" class="header-logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav nav-underline ms-auto">
+                        <li class="nav-item dropdown" (mouseover)="toggleOurWork(true)" (mouseleave)="toggleOurWork(false)">
+                            <a class="nav-link dropdown-toggle" href="#" id="ourWorkDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Our Work
+                            </a>
+                            <ul class="dropdown-menu" [class.show]="isOurWorkVisible" aria-labelledby="ourWorkDropdown">
+                                <li><a class="dropdown-item" href="#">Influencer Marketing Campaigns in India</a></li>
+                                <li><a class="dropdown-item" href="#">Influencer Marketing Campaigns in Middle East</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" (mouseover)="toggleServices(true)" (mouseleave)="toggleServices(false)">
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <div class="dropdown-menu p-3 servicesDdl" [class.show]="isServicesVisible"
+                                aria-labelledby="servicesDropdown">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-3" *ngFor="let service of servicesList">
+                                        <h5 class="dropdown-header"><i [class]="service.iconClass"></i> {{ service.heading }}</h5>
+                                        <ul class="list-unstyled">
+                                            <li *ngFor="let option of service.options">
+                                                <a class="dropdown-item" [routerLink]="option.link">{{ option.label }}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown" (mouseover)="toggleCountries(true)" (mouseleave)="toggleCountries(false)">
+                            <a class="nav-link dropdown-toggle" href="#" id="countryDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Countries
+                            </a>
+                            <div class="dropdown-menu countriesDDL" [class.show]="isCountriesVisible">
+                                <div class="row">
+                                    <div class="col">
+                                        <h5 class="dropdown-header"><i class="fa-solid fa-circle"></i>India</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">New Delhi</a></li>
+                                            <li><a class="dropdown-item" href="#">Gurugram</a></li>
+                                            <li><a class="dropdown-item" href="#">Noida</a></li>
+                                            <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                                            <li><a class="dropdown-item" href="#">Bangalore</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="vr"></div>
+                                    <div class="col">
+                                        <h5 class="dropdown-header"><i class="fa-solid fa-circle"></i>Other Countries</h5>
+                                        <ul class="list-unstyled">
+                                            <li><a class="dropdown-item" href="#">USA</a></li>
+                                            <li><a class="dropdown-item" href="#">Philippines</a></li>
+                                            <li><a class="dropdown-item" href="#">UAE (Influencer Marketing)</a></li>
+                                            <li><a class="dropdown-item" href="#">UAE (UGC)</a></li>
+                                            <li><a class="dropdown-item" href="#">Indonesia</a></li>
+                                            <li><a class="dropdown-item" href="#">UK</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown" (mouseover)="toggleAbout(true)" (mouseleave)="toggleAbout(false)">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" [class.show]="isAboutVisible" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="#">About US</a></li>
+                                <li><a class="dropdown-item" href="#">Blogs</a></li>
+                                <li><a class="dropdown-item" href="#">Our Clients</a></li>
+                                <li><a class="dropdown-item" href="#">Case Studies</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item contact-btn">
+                            <a class="btn btn-primary nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</section>
