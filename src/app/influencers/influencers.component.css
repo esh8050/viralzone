@@ -1,0 +1,158 @@
+/* Basic Reset and Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.white-panel-services {
+    background: #f9f9f9; /* Light background for the section */
+    padding: 50px 0; /* Padding for top and bottom */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.block-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.block-title h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.block-title p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.column {
+    padding: 15px;
+}
+
+.services-panel-wrapper {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.services-panel-wrapper:hover {
+    transform: scale(1.03);
+}
+
+.btn-brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.btn-brand img {
+    margin-right: 10px;
+    width: 30px; /* Adjust the size of the icon */
+    height: auto;
+}
+
+.btn-brand:hover {
+    background: #555;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+}
+
+.btn-gradient {
+    background: linear-gradient(45deg, #ff6f61, #ff9e3f);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(45deg, #ff9e3f, #ff6f61);
+}
+
+.im-service-panel {
+    padding: 20px;
+}
+
+.im-service-img img,
+.gif-video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.influ-list-wrapper {
+    margin-top: 20px;
+}
+
+.influ-list {
+    list-style: none;
+    padding: 0;
+}
+
+.influ-list ul {
+    padding-left: 20px;
+}
+
+.influ-list li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.column-fluid-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.column-1-xxs {
+    flex: 1;
+}
+
+.column-1-lg {
+    flex: 1;
+}
+
+.instra-bg {
+    background: #f3f3f3;
+}
+
+.linkedin-bg {
+    background: #f1f1f1;
+}
+
+.meme-bg {
+    background: #fefefe;
+}
