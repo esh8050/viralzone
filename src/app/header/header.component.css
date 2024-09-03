@@ -39,7 +39,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-  color: #FFC858; /* Use a color from the palette for hover */
+  color: #b81515; /* Use a color from the palette for hover */
   background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
   transform: scale(1.05); /* Slight zoom effect */
 }
@@ -103,7 +103,7 @@
 
 .dropdown-item:active, .dropdown-item:hover {
   color: #ffffff; /* White */
-  background-color: #FF5373; /* Pink from the palette */
+  background-color: #b81515; /* Pink from the palette */
 }
 
 /* Flex and Width */
@@ -170,7 +170,7 @@ ul.dropdown-menu li a, ul.list-unstyled li a {
 
 .contact-btn a:hover {
   color: #ffffff !important;
-  background-color: #FFC858 !important; /* Yellow from the palette */
+  background-color: #b81515 !important; /* Yellow from the palette */
   transform: scale(1.05); /* Slight zoom effect */
 }
 

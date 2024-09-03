@@ -4,11 +4,12 @@ import { HeaderComponent } from './header/header.component';
 import {MainIntroComponent} from './main-intro/main-intro.component'
 import {FocusContentComponent} from './focus-content/focus-content.component'
 import {InfluencersComponent} from './influencers/influencers.component'
+import {ClientsComponent} from './clients/clients.component'
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, MainIntroComponent, FocusContentComponent, InfluencersComponent],
+  imports: [RouterOutlet, HeaderComponent, MainIntroComponent, FocusContentComponent, InfluencersComponent, ClientsComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

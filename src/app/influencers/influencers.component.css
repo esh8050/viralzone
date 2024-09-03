@@ -1,158 +1,290 @@
-/* Basic Reset and Styling */
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+.influ-text {
+    color: #ec003e;
+    font-weight: 800;   
 }
 
-.white-panel-services {
-    background: #f9f9f9; /* Light background for the section */
-    padding: 50px 0; /* Padding for top and bottom */
+h2.light-weight {
+    display: inline-block; /* Keeps the element inline while allowing text-align: center to work */
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.block-title {
+.header{
     text-align: center;
-    margin-bottom: 40px;
 }
 
-.block-title h2 {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
+p {
+    font-size: 1rem;
+    margin: 1em 0;
+    text-align: left;
+    color: #091337;
+    padding: 0 70px;
 }
 
-.block-title p {
-    font-size: 1.1em;
-    color: #666;
-}
-
-.column {
-    padding: 15px;
-}
-
-.services-panel-wrapper {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.youtube-wave-bg {
+    position: relative;
     overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.services-panel-wrapper:hover {
-    transform: scale(1.03);
-}
-
-.btn-brand {
+    /* background: linear-gradient(120deg, #ff0000, #ff8c00); */
+    background: #ea5b5b;
+    height: 500px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    border-radius: 25px; /* Curved corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+   margin: 0 70px;
+  }
+  
+  button.youtube-button {
+    font-family: inherit;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #ff0000 0%, #ff5050 100%);
+    color: white;
+    padding: 0.8em 1.2em;
     display: flex;
     align-items: center;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-    background: #333;
-    padding: 10px 20px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-}
-
-.btn-brand img {
-    margin-right: 10px;
-    width: 30px; /* Adjust the size of the icon */
-    height: auto;
-}
-
-.btn-brand:hover {
-    background: #555;
-}
-
-.btn-primary {
-    background: #007bff;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background 0.3s ease;
-}
-
-.btn-primary:hover {
-    background: #0056b3;
-}
-
-.btn-gradient {
-    background: linear-gradient(45deg, #ff6f61, #ff9e3f);
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.btn-gradient:hover {
-    background: linear-gradient(45deg, #ff9e3f, #ff6f61);
-}
-
-.im-service-panel {
-    padding: 20px;
-}
-
-.im-service-img img,
-.gif-video {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.influ-list-wrapper {
-    margin-top: 20px;
-}
-
-.influ-list {
-    list-style: none;
-    padding: 0;
-}
-
-.influ-list ul {
-    padding-left: 20px;
-}
-
-.influ-list li {
-    margin-bottom: 10px;
-    font-size: 1em;
-    color: #333;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.column-fluid-mobile {
+    justify-content: center;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+  }
+  
+  button.youtube-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  button.youtube-button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  button.youtube-button span {
+    display: block;
+    margin-left: 0.4em;
+    transition: all 0.3s;
+  }
+  
+  button.youtube-button svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+    transition: all 0.3s;
+  }
+  
+  button.youtube-button .svg-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0.5em;
+    transition: all 0.3s;
+  }
+  
+  button.youtube-button:hover .svg-wrapper {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  button.youtube-button:hover svg {
+    transform: rotate(45deg);
+  }
+
+  .row {
+    display: flex;
+    justify-content: flex-start; /* Aligns children to the left */
+    /* Optional: Adjust space between columns */
 }
 
-.column-1-xxs {
-    flex: 1;
+.col-8 {
+    flex: 0 0 66.6667%; /* or use 'width: 66.6667%;' */
+    max-width: 66.6667%;
+    display: flex;         /* Use flexbox to center content */
+    flex-direction: column; /* Align children vertically */
+    align-items: center;   /* Center children horizontally */
+    text-align: center;    /* Center text inside the button */
+    padding-top: 50px;
 }
 
-.column-1-lg {
-    flex: 1;
+.col-4 {
+    /* Optional: Ensure this column takes up the remaining space or adjust as needed */
+    flex: 0 0 33.3333%; /* or use 'width: 33.3333%;' */
+    max-width: 33.3333%;
 }
 
-.instra-bg {
-    background: #f3f3f3;
+.highlighted-text {
+    font-size: 1.25rem;        /* Slightly larger font size for emphasis */
+    color: #2c250d;            /* Bright color for visibility */
+    font-weight: 600;          /* Semi-bold text for added emphasis */
+    margin: 1em 0;            /* Space above and below the paragraph */
+    text-align: center;       /* Center-align the text */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow effect for text */
 }
 
-.linkedin-bg {
-    background: #f1f1f1;
+button,
+button::after {
+ padding: 16px 20px;
+ font-size: 18px;
+ background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+ border: 0;
+ color: #fff;
+ letter-spacing: 3px;
+ line-height: 1;
+ box-shadow: 6px 0px 0px #00e6f6;
+ outline: transparent;
+ position: relative;
 }
 
-.meme-bg {
-    background: #fefefe;
+button::after {
+ --slice-0: inset(50% 50% 50% 50%);
+ --slice-1: inset(80% -6px 0 0);
+ --slice-2: inset(50% -6px 30% 0);
+ --slice-3: inset(10% -6px 85% 0);
+ --slice-4: inset(40% -6px 43% 0);
+ --slice-5: inset(80% -6px 5% 0);
+ content: "HOVER ME";
+ display: block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient(45deg, transparent 3%, #00e6f6 3%, #00e6f6 5%, #ff013c 5%);
+ text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+ clip-path: var(--slice-0);
 }
+
+button:hover::after {
+ animation: 1s glitch;
+ animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+ 0% {
+  clip-path: var(--slice-1);
+  transform: translate(-20px, -10px);
+ }
+
+ 10% {
+  clip-path: var(--slice-3);
+  transform: translate(10px, 10px);
+ }
+
+ 20% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 10px);
+ }
+
+ 30% {
+  clip-path: var(--slice-3);
+  transform: translate(0px, 5px);
+ }
+
+ 40% {
+  clip-path: var(--slice-2);
+  transform: translate(-5px, 0px);
+ }
+
+ 50% {
+  clip-path: var(--slice-3);
+  transform: translate(5px, 0px);
+ }
+
+ 60% {
+  clip-path: var(--slice-4);
+  transform: translate(5px, 10px);
+ }
+
+ 70% {
+  clip-path: var(--slice-2);
+  transform: translate(-10px, 10px);
+ }
+
+ 80% {
+  clip-path: var(--slice-5);
+  transform: translate(20px, -10px);
+ }
+
+ 90% {
+  clip-path: var(--slice-1);
+  transform: translate(-10px, 0px);
+ }
+
+ 100% {
+  clip-path: var(--slice-1);
+  transform: translate(0);
+ }
+}
+
+.list-container {
+    display: flex;            /* Use flexbox for layout */
+    justify-content: space-between; /* Space out columns evenly */
+    margin-top: 20px;         /* Space above the list container */
+    gap: 20px;                /* Space between columns */
+}
+
+.list-column {
+    flex: 1;                  /* Each column takes equal width */
+    padding: 20px;            /* Padding inside each column */
+    margin: 0;                /* No margin between columns */
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    border-radius: 12px;      /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Light shadow effect */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for effects */
+    text-align: left;         /* Align text to the left */
+}
+
+.list-column:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.list-column ul {
+    list-style-type: disc;    /* Display list items with disc bullets */
+    padding-left: 20px;       /* Space between bullet and text */
+    margin: 0;                /* No margin for the list */
+    background: transparent;  /* Transparent background for the list */
+}
+
+.list-column li {
+    margin-bottom: 10px;      /* Space between list items */
+    color: #333;              /* Dark text color for readability */
+    font-size: 1.125rem;      /* Larger font size for emphasis */
+    line-height: 1.6;         /* Improved readability */
+    position: relative;       /* Position for custom bullet alignment */
+    padding-left: 30px;       /* Space for custom bullet */
+}
+
+.col-4 {
+    display: flex;         /* Use flexbox to center content */
+    flex-direction: column; /* Align children vertically */
+    align-items: center;   /* Center children horizontally */
+    text-align: center;    /* Center text inside the button */
+    padding-top: 50px;
+    position: relative; /* Ensure positioning context for child elements */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.video-wrapper {
+    width: 80%; /* Adjust width to fit within .col-4 */
+    height: 80%; /* Adjust height to fit within .col-4 */
+    position: relative; /* Position relative to .col-4 */
+    margin-right: 10%; /* Add space on the right side */
+    border-radius: 20px; /* Inherit the border-radius from .col-4 */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    width: auto; /* Width adjusts automatically to maintain aspect ratio */
+    height: 100%; /* Full height of the .video-wrapper */
+    max-width: 100%; /* Ensure the video does not overflow horizontally */
+    object-fit: contain; /* Ensure the entire video is visible without cropping */
+    border-radius: inherit;
+}
+
