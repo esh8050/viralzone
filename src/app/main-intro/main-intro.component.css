@@ -19,7 +19,6 @@ section {
 /* Carousel Container Styling */
 .carousel-container {
     position: relative;
-    width: calc(100% - 40px); /* Space on left and right sides */
     height: 80vh; /* Adjusted height to ensure no overlap */
     overflow: hidden;
     margin: 0 auto;
@@ -128,21 +127,6 @@ section {
     .welcome-text h4 {
         font-size: 1rem;
     }
-}
-
-/* Intro Section Background */
-.intro {
-    width: 100%;
-    background: linear-gradient(135deg,
-            rgba(205, 180, 219, 1) 0%,
-            rgba(255, 200, 221, 1) 25%,
-            rgba(255, 175, 204, 1) 50%,
-            rgba(189, 224, 254, 1) 75%,
-            rgba(162, 210, 255, 1) 100%);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    animation: wave-animation 20s linear infinite;
 }
 
 /* Keyframes for wave animation */

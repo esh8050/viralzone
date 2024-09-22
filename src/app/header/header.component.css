@@ -103,7 +103,7 @@
 
 .dropdown-item:active, .dropdown-item:hover {
   color: #ffffff; /* White */
-  background-color: #b81515; /* Pink from the palette */
+  background-color: #FF5373; /* Pink from the palette */
 }
 
 /* Flex and Width */
@@ -170,7 +170,7 @@ ul.dropdown-menu li a, ul.list-unstyled li a {
 
 .contact-btn a:hover {
   color: #ffffff !important;
-  background-color: #b81515 !important; /* Yellow from the palette */
+  background-color: #FFC858 !important; /* Yellow from the palette */
   transform: scale(1.05); /* Slight zoom effect */
 }
 

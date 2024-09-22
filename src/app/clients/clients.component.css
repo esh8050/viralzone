@@ -1,0 +1,35 @@
+.logo-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Gap between rows */
+  }
+  
+  .logo-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .logo-item {
+    flex: 1 1 calc(20% - 20px); /* 20% width for 5 logos per row, minus gap */
+    max-width: calc(20% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 10px; /* Space below each logo */
+    padding: 5px; /* Optional padding inside each logo item */
+  }
+  
+  .logo-item img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px; /* Optional padding for the image itself */
+  }
+
+  .text-center {
+    font-size: 2.5rem;
+    color: #3f3f3f;
+    padding-top: 30px;
+  }
+  
